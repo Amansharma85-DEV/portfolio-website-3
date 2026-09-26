@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOWREEL :: Hridey Dutta 2026 Portfolio</title>
+  <meta name="description" content="Watch the 2026 Featured Showreel by Hridey Dutta — High-velocity editing, 3D motion graphics, kinetic typography, and sound design.">
+  <link rel="stylesheet" href="styles.css?v=2026">
+</head>
+<body>
+
+  <h1 class="sr-only">2026 Featured Showreel — Hridey Dutta Video Editing & Motion Design</h1>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-follower"><span class="cursor-badge">PLAY</span></div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <a href="index.html" class="nav-brand">
+      <span class="status-dot"></span>
+      HRIDEY DUTTA / 2026
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-cursor="VIEW">SHOWCASE</a></li>
+      <li><a href="work.html" data-cursor="VIEW">WORK</a></li>
+      <li><a href="showreel.html" data-cursor="PLAY">SHOWREEL</a></li>
+      <li><a href="campaigns.html" data-cursor="VIEW">CAMPAIGNS</a></li>
+      <li><a href="capabilities.html" data-cursor="OPEN">CAPABILITIES</a></li>
+      <li><a href="about.html" data-cursor="OPEN">ABOUT</a></li>
+      <li><a href="contact.html" data-cursor="OPEN">CONTACT</a></li>
+    </ul>
+
+    <a href="contact.html" class="btn btn-secondary" data-cursor="OPEN">HIRE ME</a>
+
+    <button class="btn btn-secondary mobile-menu-trigger" id="mobile-menu-trigger" aria-label="Open Navigation Menu">MENU</button>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="nav-brand">HRIDEY DUTTA / 2026</a>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html">SHOWCASE</a></li>
+      <li><a href="work.html">WORK</a></li>
+      <li><a href="showreel.html">SHOWREEL</a></li>
+      <li><a href="campaigns.html">CAMPAIGNS</a></li>
+      <li><a href="capabilities.html">CAPABILITIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div>© 2026 HRIDEY DUTTA</div>
+      <div>VIDEO & MOTION DESIGN</div>
+    </div>
+  </div>
+
+  <!-- Page Header Banner -->
+  <header class="page-header">
+    <span class="page-header-tag">// 2026 FEATURED SHOWREEL</span>
+    <h2 class="page-header-title">SHOWREEL</h2>
+    <p class="page-header-desc">A cinematic montage capturing commercial pacing, kinetic motion graphics, optical flow speed ramps, and immersive audio engineering.</p>
+  </header>
+
+  <!-- CINEMATIC SHOWREEL HERO SECTION -->
+  <section class="showreel-section">
+    <div class="showreel-wrapper" style="aspect-ratio: 16 / 9;">
+      <video class="showreel-video" id="main-showreel-video" controls muted loop playsinline preload="auto" poster="assets/hridey_portrait.jpg">
+        <source src="videos/showreel_main.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="showreel-overlay">
+        <div class="showreel-header">
+          <span class="showreel-tag">2026 FEATURED SHOWREEL</span>
+          <span class="hero-label-bottom" style="color: #ffffff;">DURATION: 01:24 // 4K REC.709</span>
+        </div>
+
+        <div class="showreel-controls">
+          <button class="btn btn-primary" onclick="const v=document.getElementById('main-showreel-video'); v.paused ? v.play() : v.pause()" data-cursor="PLAY">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            PLAY / PAUSE
+          </button>
+
+          <button class="audio-toggle-btn" id="audio-toggle" title="Toggle Sound" data-cursor="SOUND">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width: var(--container-max); margin: 60px auto 0 auto; padding: 0 40px; border-top: 1px solid var(--border-color); padding-top: 40px; display: grid; grid-template-columns: 300px 1fr; gap: 40px;">
+      <div>
+        <div class="intro-tag" style="margin-bottom: 12px;">CREATIVE DIRECTION</div>
+        <h3 style="font-family: var(--font-syne); font-size: var(--text-subheading); font-weight: 800; text-transform: uppercase;">HRIDEY DUTTA</h3>
+        <p style="font-family: var(--font-mono); font-size: var(--text-small); color: var(--text-muted); margin-top: 6px;">Video Editor & Motion Designer // 2026</p>
+      </div>
+
+      <div>
+        <p style="font-family: var(--font-mono); font-size: var(--text-body); color: var(--text-muted); line-height: 1.8;">
+          This showreel highlights my core workflow: combining high-energy editing rhythm with fluid 2D and 3D kinetic typography, precision beat synchronization, custom audio drops, and filmic color correction. Designed specifically for commercial campaigns, automotive edits, and high-retention digital media.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-contact" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="footer-bottom" style="margin-top: 0; border-top: none;">
+      <div>© 2026 HRIDEY DUTTA. ALL RIGHTS RESERVED.</div>
+      <div>BUILT FOR HIGH-IMPACT MOTION DESIGN</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2026"></script>
+</body>
+</html>

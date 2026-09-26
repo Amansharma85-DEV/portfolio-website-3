@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT :: Hridey Dutta 2026 Portfolio</title>
+  <meta name="description" content="Get in touch with Hridey Dutta for commercial video editing projects, motion graphics campaigns, automotive edits, and short-form video production.">
+  <link rel="stylesheet" href="styles.css?v=2026">
+</head>
+<body>
+
+  <h1 class="sr-only">Contact Hridey Dutta — Video Editor & Motion Designer</h1>
+
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-follower"><span class="cursor-badge">OPEN</span></div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <a href="index.html" class="nav-brand">
+      <span class="status-dot"></span>
+      HRIDEY DUTTA / 2026
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-cursor="VIEW">SHOWCASE</a></li>
+      <li><a href="work.html" data-cursor="VIEW">WORK</a></li>
+      <li><a href="showreel.html" data-cursor="PLAY">SHOWREEL</a></li>
+      <li><a href="campaigns.html" data-cursor="VIEW">CAMPAIGNS</a></li>
+      <li><a href="capabilities.html" data-cursor="OPEN">CAPABILITIES</a></li>
+      <li><a href="about.html" data-cursor="OPEN">ABOUT</a></li>
+      <li><a href="contact.html" data-cursor="OPEN">CONTACT</a></li>
+    </ul>
+
+    <a href="contact.html" class="btn btn-secondary" data-cursor="OPEN">HIRE ME</a>
+
+    <button class="btn btn-secondary mobile-menu-trigger" id="mobile-menu-trigger" aria-label="Open Navigation Menu">MENU</button>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="nav-brand">HRIDEY DUTTA / 2026</a>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html">SHOWCASE</a></li>
+      <li><a href="work.html">WORK</a></li>
+      <li><a href="showreel.html">SHOWREEL</a></li>
+      <li><a href="campaigns.html">CAMPAIGNS</a></li>
+      <li><a href="capabilities.html">CAPABILITIES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div>© 2026 HRIDEY DUTTA</div>
+      <div>VIDEO & MOTION DESIGN</div>
+    </div>
+  </div>
+
+  <!-- Page Header Banner -->
+  <header class="page-header">
+    <span class="page-header-tag">// INQUIRIES & BOOKING</span>
+    <h2 class="page-header-title">LET'S WORK TOGETHER</h2>
+    <p class="page-header-desc">Available for select commercial edits, motion design campaigns, high-impact video projects, and creative collaborations in 2026.</p>
+  </header>
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="section-contact" style="border-top: none;">
+    <div class="contact-wrapper">
+      
+      <div class="contact-left">
+        <h2 class="contact-editorial-title">START A<br>PROJECT.</h2>
+        <p>Tell me about your project goals, timeline, and scope. I'll get back to you within 24 hours.</p>
+
+        <a href="mailto:hridey.dutta.edit@gmail.com" class="email-direct-box" data-cursor="OPEN">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          hridey.dutta.edit@gmail.com
+        </a>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been sent to Hridey Dutta.');">
+        <div class="form-group">
+          <label for="name">YOUR NAME / COMPANY</label>
+          <input type="text" id="name" required placeholder="John Doe / Creative Agency">
+        </div>
+
+        <div class="form-group">
+          <label for="email">YOUR EMAIL ADDRESS</label>
+          <input type="email" id="email" required placeholder="john@company.com">
+        </div>
+
+        <div class="form-group">
+          <label for="type">PROJECT TYPE</label>
+          <select id="type">
+            <option>Commercial Video Editing</option>
+            <option>Motion Graphics & 3D Animation</option>
+            <option>Automotive / Event Edit</option>
+            <option>Social Media Reels & Shorts</option>
+            <option>Full Creative Production</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">BUDGET BRACKET (OPTIONAL)</label>
+          <select id="budget">
+            <option>$1,000 - $3,000</option>
+            <option>$3,000 - $5,000</option>
+            <option>$5,000 - $10,000</option>
+            <option>$10,000+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">PROJECT DETAILS & TIMELINE</label>
+          <textarea id="message" rows="4" required placeholder="Tell me about your project, target audience, and desired delivery date..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" data-cursor="OPEN">SUBMIT INQUIRY →</button>
+      </form>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 HRIDEY DUTTA. ALL RIGHTS RESERVED.</div>
+      <div>BUILT FOR HIGH-IMPACT MOTION DESIGN</div>
+    </div>
+  </section>
+
+  <script src="script.js?v=2026"></script>
+</body>
+</html>
