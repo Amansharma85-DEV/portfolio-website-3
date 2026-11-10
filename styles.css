@@ -2763,8 +2763,19 @@ body.cursor-hover-link #custom-cursor-follower .cursor-badge {
     margin-left: 4px !important;
   }
 
-  /* 6. ONE COLUMN GRIDS ON MOBILE (320px - 600px) */
-  .reels-grid-4,
+  /* 6. MOBILE REELS GRID: 2 COLUMNS SIDE-BY-SIDE */
+  .reels-grid-4 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ONE COLUMN GRIDS ON MOBILE (320px - 600px) */
   .longform-top-row,
   .blender-viewport-grid,
   .behance-related-grid,
@@ -2858,6 +2869,32 @@ body.cursor-hover-link #custom-cursor-follower .cursor-badge {
     right: 12px !important;
     max-width: calc(100% - 24px) !important;
     box-sizing: border-box !important;
+  }
+
+  /* 2-Column Mobile Reels Adjustments */
+  .reel-card-portrait .play-circle-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+  .reel-card-portrait .play-circle-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .reel-card-portrait .reel-card-text {
+    font-size: clamp(10px, 3.2vw, 12px) !important;
+    padding: 4px 6px !important;
+    bottom: 8px !important;
+    left: 6px !important;
+    right: 6px !important;
+    max-width: calc(100% - 12px) !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
   .featured-big-title {
@@ -3491,6 +3528,10 @@ body.cursor-hover-link #custom-cursor-follower .cursor-badge {
   .appreciate-toggle-btn {
     flex: 1 !important;
     min-width: 0 !important;
+  }
+
+  .reels-grid-4 {
+    gap: 8px !important;
   }
 }
 
