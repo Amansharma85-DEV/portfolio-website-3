@@ -2766,7 +2766,7 @@ body.cursor-hover-link #custom-cursor-follower .cursor-badge {
   /* 6. MOBILE REELS GRID: 2 COLUMNS SIDE-BY-SIDE */
   .reels-grid-4 {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 10px !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -2820,6 +2820,7 @@ body.cursor-hover-link #custom-cursor-follower .cursor-badge {
   }
 
   .reel-card-portrait {
+    min-width: 0 !important;
     aspect-ratio: 9 / 16 !important;
   }
 
